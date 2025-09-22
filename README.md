@@ -1,1 +1,1 @@
-# SGA_-GestaoAcademica
+# SGA_GestaoAcademica
