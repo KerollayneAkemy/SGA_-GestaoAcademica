@@ -1,0 +1,134 @@
+* {margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
+}
+
+
+header{
+  background:#6A0DAD;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 5%;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+header .logo{
+  font-size:28px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+header nav a{
+  margin:0 15px;
+  color:#fff;
+  font-weight:500;
+  text-decoration:none;
+  transition:0.3s;
+  position:relative;
+}
+
+header nav a.active::after,
+header nav a:hover::after{
+  content:'';
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  width:100%;
+  height:2px;
+  background:#FFC0FF;
+}
+
+.btn-login{
+  background:#000;
+  padding:8px 16px;
+  border-radius:6px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn-login:hover{
+    background:#333;
+}
+
+
+.sobre-container{
+    max-width:1000px;
+    margin:80px auto;
+    padding:0 5%;
+    text-align:center;
+}
+
+.sobre-container h2{
+    color:#6A0DAD;
+    font-size:36px;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+.sobre-container p{
+    font-size:18px;
+    color:#555;
+    margin-bottom:20px;
+}
+
+
+.missao-valores{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+}
+
+.missao-valores .card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    flex:1 1 300px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.missao-valores .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.2);
+}
+
+.missao-valores h3{
+    color:#6A0DAD;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.missao-valores p, .missao-valores ul{
+    font-size:16px;
+    color:#555;
+    line-height:1.6;
+    text-align:left;
+}
+
+.missao-valores ul{
+    list-style-type:disc;
+    padding-left:20px;
+}
+
+footer{
+    background:#6A0DAD;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+    font-weight:500;
+}
