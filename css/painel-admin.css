@@ -139,8 +139,4 @@ footer {
     margin-top: 60px;
 }
 
-/* RESPONSIVO */
-@media(max-width:768px){
-    .form-admin{flex-direction:column;}
-    .form-admin button{width:100%;}
-}
+

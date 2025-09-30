@@ -152,10 +152,3 @@ footer{
   margin-top:60px;
   font-weight:500;
 }
-
-/* ====================== RESPONSIVO ====================== */
-@media(max-width:768px){
-  .cursos h2{font-size:32px;}
-  #filtro{width:90%;}
-  .curso-list{grid-template-columns:1fr;}
-}
