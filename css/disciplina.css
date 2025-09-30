@@ -52,28 +52,33 @@ header nav a:hover::after{
   font-weight:bold;
   transition:0.3s;
 }
-.btn-login:hover{background:#333;}
+.btn-login:hover{
+  background:#333;
+}
 
+/*container*/
 .disciplina-container{
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:80px 5%;
+  padding:80px;
 }
 
+/*dentro do container*/
 .disciplina-card{
   background:#fff;
   padding:40px;
   border-radius:15px;
   max-width:700px;
-  width:100%;
   box-shadow:0 10px 25px rgba(0,0,0,0.15);
   transition:transform 0.3s, box-shadow 0.3s;
 }
+
 .disciplina-card:hover{
   transform:translateY(-5px);
   box-shadow:0 15px 35px rgba(0,0,0,0.2);
 }
+
 .disciplina-card h2{
   color:#6A0DAD;
   font-size:32px;
@@ -81,11 +86,13 @@ header nav a:hover::after{
   text-align:center;
   letter-spacing:1px;
 }
+
 .disciplina-card p{
   font-size:18px;
   color:#555;
   margin-bottom:15px;
 }
+
 .btn-voltar{
   display:inline-block;
   margin-top:20px;
