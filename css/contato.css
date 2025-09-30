@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --roxo-principal: #6A0DAD;
+  --roxo-escuro: #4a057a;
+  --rosa-claro: #FFC0FF;
+  --cinza-texto: #333;
+  --cinza-secundario: #555;
+  --fundo-claro: #f8f8f8;
+  --preto: #000;
+  --branco: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--fundo-claro);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--roxo-principal);
+  color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: var(--branco);
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+header nav a.active::after,
+header nav a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--rosa-claro);
+}
+
+.btn-login {
+  background: var(--preto);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contato-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px 25px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contato-container h2 {
+  color: #6A0DAD;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contato-container p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input,
+textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 2px solid #6A0DAD;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4a057a;
+  box-shadow: 0 0 8px rgba(106, 13, 173, 0.3);
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+button {
+  padding: 14px;
+  background: #6A0DAD;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: #4a057a;
+  transform: translateY(-2px);
+}
+
